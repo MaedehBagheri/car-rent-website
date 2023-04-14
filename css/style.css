@@ -1,0 +1,112 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+:root{
+    --color-primary:#3563E9;
+    --color--secondary:#54A6FF;
+    --color-black:#1a202c;
+    --color-gray:#90A3bf;
+    --bground-color:#f6f7f9;
+
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: var(--bground-color);
+}
+
+/* button */
+
+.btn{
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    padding: 1.4rem 2.5rem;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+
+.btn--primary{
+    background-color: var(--color-primary);
+    color: white;
+}
+.btn--secondary{
+    background-color: #54A6FF;
+    color: white;
+}
+
+@media screen and (min-width:1024px){
+    
+    .btn{
+        font-size: 1.2rem;
+    }
+}
+
+
+/* navbar */
+
+header{
+    background-color: #ffffff;
+    height: 120px;
+    padding: 0 5.5rem;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-detail{
+    display: flex;
+    gap: 5rem;
+    margin-top: 3rem;
+}
+.navbar-detail input{
+    width: 50rem;
+    border: none;
+    border: 1px solid #e7e9ec;
+    border-radius: 32px;
+    padding: 1rem;
+}
+
+.list{
+    display: flex;
+    gap: 2.5rem;
+}
+.list li {
+    border: 1px solid #e7e9ec;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.list li a i{
+    font-size: 2.5rem;
+    text-align: center;
+    color: #616060;
+    margin-top: 0.8rem;
+}
+
+.circle{
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    right: 130px;
+    top: 28px;
+}
