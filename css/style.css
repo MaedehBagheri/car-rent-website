@@ -58,8 +58,10 @@ body{
 
 header{
     background-color: #ffffff;
-    height: 120px;
+    height:125px;
     padding: 0 5.5rem;
+    width: 100%;
+    position:fixed ;
 }
 
 .navbar{
@@ -78,7 +80,7 @@ header{
     border: none;
     border: 1px solid #e7e9ec;
     border-radius: 32px;
-    padding: 1rem;
+    padding: 1.2rem ;
 }
 
 .list{
@@ -110,3 +112,87 @@ header{
     right: 130px;
     top: 28px;
 }
+
+.navbar-detail input{
+    background: url(/assets/images/search-normal.png)no-repeat;
+  background-position: left;
+  background-position-x:3%;
+
+}
+
+@media screen and (max-width:768px){
+    
+    .nav__item{
+        display: none;
+    }
+
+    .navbar-detail input{
+        width: 20rem;
+    }
+}
+@media screen and (max-width:1024px){
+    
+
+    .navbar-detail input{
+        width: 20rem;
+    }
+}
+@media screen and (max-width:425px){
+    
+    .nav__item{
+        display: none;
+    }
+
+    .navbar-detail input{
+       
+        display: none;}
+   
+}
+
+
+.search-mobile{
+    display: none;
+}
+
+@media screen and (max-width:645px){
+    .search-mobile input{
+        width: 100%;
+        border: none;
+        border: 1px solid #e7e9ec;
+        border-radius: 8px;
+        padding: 1rem ;
+        background: url(/assets/images/search-normal.png)no-repeat;
+        background-position: left;
+        background-position-x:3%;
+    }
+    
+    .search-mobile{
+     margin-top: 0.4rem;
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    }
+    
+    .filter{
+        width: 50px;
+        height: 40px;
+        border: none;
+        background-color: #ffffff;
+        border: 1px solid #e7e9ec;
+        border-radius: 8px;
+      margin-left: 2rem;
+    }
+    
+    .filter .bx{
+      font-size: 1.8rem;
+    }
+    .navbar-detail input{
+        display: none;
+    }
+
+    .navbar{
+        margin-bottom: 0.2rem;
+    }
+}
+
+
