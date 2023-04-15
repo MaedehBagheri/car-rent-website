@@ -61,7 +61,8 @@ header{
     height:125px;
     padding: 0 5.5rem;
     width: 100%;
-    position:fixed ;
+   z-index: 10000;
+  
 }
 
 .navbar{
@@ -196,3 +197,105 @@ header{
 }
 
 
+/* home */
+.slider{
+margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    height: 360px;
+    width: 640px;
+    background-image: url(./jerry-zhang-ePpaQC2c1xA-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 3s;
+
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+@keyframes animate {
+    0%{
+        background-image: url(/assets/images/Ads\ 1.png);
+    }
+    25%{
+        background-image: url(/assets/images/Ads\ 2.png);
+    }
+    50%{
+        background-image: url(/assets/images/Ads\ 1.png);
+    }
+    75%{
+        background-image: url(/assets/images/Ads\ 2.png);
+    }
+    100%{
+        background-image: url(/assets/images/Ads\ 1.png);
+    }
+}
+
+
+@media screen and (max-width:768px){
+  
+  .content{
+    width: 320px;
+    height:180px ;
+  }
+}
+
+@media screen and (max-width:320px){
+  
+    .content{
+      width:260px;
+      height:250px ;
+    }
+  }
+
+  /* car-Rent */
+
+  .cart{
+    width: 582px;
+    height:136px ;
+    border-radius: 10px;
+    background-color: #ffffff;
+  }
+
+  .btn-add{
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    background-color: var(--color-primary);
+  }
+.rent{
+    padding: 50px 3%;
+}
+  .main{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .btn-add .bx{
+    font-size: 1.9rem;
+  }
+
+  .cart{
+    padding:1.5rem 5rem;
+    display: flex;
+    flex-direction: column;
+   
+  }
+
+  .cart-detail{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3.5rem;
+  }
