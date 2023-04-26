@@ -30,11 +30,10 @@ body{
     border: none;
     outline: 0;
     cursor: pointer;
-    padding: 1.4rem 2.5rem;
+    padding: 1.2rem 2.2rem;
     border-radius: 5px;
     font-size: 1.6rem;
     font-weight: 700;
-    margin-top: 2rem;
 }
 
 .btn--primary{
@@ -370,4 +369,144 @@ margin-top: 4rem;
 
     /* end of cart */
 
-    
+
+    /* catalogue cars */
+
+    .catalogue-car{
+        padding: 0 64px;
+        overflow-y: auto;
+    }
+    .catalogue-heading{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .view{
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--color-primary);
+    }
+    .popular{
+        font-size: 18px;
+        font-weight: 800;
+        color: #90A3bf;
+    }
+    .catalogue-body{
+        margin-top: 29px;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        justify-content: space-between;
+        
+    }
+    @media screen and (max-width:1300px){
+        .catalogue-body{
+            gap:3rem;
+        }
+        .btn-rent{
+            padding: 0.7rem 2rem;
+        }
+    }
+    .catalogue_items{
+        width: 300px;
+        height: 380px;
+        border-radius: 10px;
+        background-color: #ffffff;
+      padding:1.5rem ;
+      margin-top: 1.9rem;
+      margin-right: 0.8rem;
+    }
+    .item_1{
+        display: flex;
+        justify-content: space-between;
+    }
+    .item_1 h4{
+        font-size: 19px;
+        font-weight: 800;
+    }
+
+    .item_2{
+        margin-top: 6px;
+        font-size: 15px;
+        font-weight: 450;
+        color: #90A3bf;
+    }
+
+    .catalogue_img{
+        margin-top: 5rem;
+    }
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 4rem;
+}
+.icons span{
+    margin-left: 1.5px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #90A3bf;
+}
+
+.item_3{
+   display: flex; 
+   justify-content: space-between;
+   margin-top: 3rem;
+}
+ .btn-rent{
+    background-color: #3563E9;
+    color: #ffffff;
+    font-size: 15px;
+ }
+
+ .item_3 p{
+    font-size: 19px;
+    font-weight: 900;
+    margin-top: 0.8rem;
+ }
+
+/* end of catalogue */
+
+/* Recomendation */
+
+.recomendtion{
+    padding: 68px;
+}
+.recomendation_body{
+    margin-top: 29px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.recomendation-heading{
+    font-size: 16px;
+    font-weight: 400;
+    color: #90A3bf;
+
+}
+
+/* end of recomendation */
+
+
+/* show-more */
+
+.show-more{
+    padding: 64px;
+    display: flex;
+justify-content:space-between;
+    align-items: center;
+
+}
+
+.show{
+    background-color: #3563E9;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.show-more h3{
+    color: #90A3bf;
+    font-size: 13px;
+}
