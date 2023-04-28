@@ -23,7 +23,11 @@ html{
 body{
     background-color: var(--bground-color);
 }
-
+.bxs-color,
+.bxs-user{
+    font-size: 16px;
+    color: #90A3bf;
+}
 /* button */
 
 .btn{
@@ -323,7 +327,7 @@ margin-top: 4rem;
    
     width: 7px;
         font-weight: 600;
-     font-size: 16px;
+     font-size: 14px;
     text-align: center;
     }
     
